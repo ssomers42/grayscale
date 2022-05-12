@@ -1,0 +1,1 @@
+Figma plugin to convert canvas elements to grayscale.

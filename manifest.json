@@ -1,0 +1,12 @@
+{
+  "name": "Grayscale",
+  "id": "1105916617805028875",
+  "api": "1.0.0",
+  "main": "code.js",
+  "menu": [
+    { "name": "Grayscale Selection", "command": "grayscale" },
+    { "separator": true },
+    { "name": "Remove All Grayscale", "command": "removeAll" }
+  ],
+  "editorType": ["figma", "figjam"]
+}
