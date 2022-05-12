@@ -1,6 +1,5 @@
 //ignore invisible nodes
 figma.skipInvisibleInstanceChildren = true;
-//create rectangle and add it to canvas at 0, 0
 //set filterLayer's fill and blend mode, lock the layer, and resize to the same size as the target
 //move the layer to the target location if it is not in a frame
 let defineFilterLayer = (target, filterLayer) => {
@@ -29,18 +28,15 @@ let defineFilterLayer = (target, filterLayer) => {
 };
 //determine if target has a frame
 //call function recursively until a FRAME or PAGE node is found.
-let hasFrame = (focus) => {
-    if (focus.type === 'FRAME' || focus.parent.type === 'FRAME') {
-        console.log('frame found!');
-        return true;
-    }
-    else if (focus.parent.type != 'PAGE') {
-        focus = focus.parent;
-        hasFrame(focus);
-    }
-    else
-        return false;
-};
+// let hasFrame = (focus) => {
+//   if (focus.type === 'FRAME' || focus.parent.type === 'FRAME') {
+//     console.log('frame found!');
+//     return true;
+//   } else if (focus.parent.type != 'PAGE') {
+//     focus = focus.parent;
+//     hasFrame(focus);
+//   } else return false;
+// };
 let isFrame = (focus) => {
     if (focus.type === 'FRAME') {
         console.log('frame found!');
